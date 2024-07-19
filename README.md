@@ -1,7 +1,7 @@
 # Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+#Работает загрузка и скачивание json файлов, добавление и удаление виджетов (в т.ч на лэйауты). Редактирование виджетов на данном этапе пока что работает только для виджетов в основном вертикальном layout.
+#!(при редактировании виджетов в горизонтальном layout горизонтальный layout слетает)!
 ## Available Scripts
 
 In the project directory, you can run:
