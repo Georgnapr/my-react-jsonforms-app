@@ -1,0 +1,159 @@
+.App {
+    width: 70%;
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana;
+    font-size: medium;
+}
+
+.workspace {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 30px;
+}
+
+.widgetspace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    width: 35%;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+}
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 96%;
+    height: 50px;
+    background-color: rgb(250, 250, 250);
+    border: solid 1px lightgray;
+    border-radius: 5px;
+}
+
+.buttonspace {
+    display: flex;
+    width: 100%;
+    height: 33%;
+}
+
+.buttonspace2 {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.del-button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    margin-left: auto;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+    margin-right: 5px;
+    background-image: url(/src/components/trashcan.svg);
+}
+
+.close-button {
+    background-image: url(/src/components/cross-svgrepo-com.svg);
+}
+.edit-button {
+    margin-left: 93.5%;
+    background-image: url(/src/components/edit-svgrepo-com.svg);
+}
+
+.dnd-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    width: 60%;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+}
+
+.drag-here {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 96%;
+    margin-top: 10px;
+    border: dashed 2px lightgray;
+    border-radius: 5px;
+}
+
+.multicolumn-drop-targets {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.multicolumn-drop-target {
+    display: flex;
+    width: 50%;
+}
+
+.is-dragging {
+    background-color: rgb(200, 200, 200);
+}
+
+.bigger-widget {
+    height: 100px;
+}
+
+.modal-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+
+}
+
+.modal-window.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 1200px;
+    height: 600px;
+    background-color: rgb(250, 250, 250);
+    border: solid 2px lightgray;
+    border-radius: 5px;
+}
+
+.jsonViewer {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+    font-size: small;
+    padding-bottom: 30px;
+}
+
+.form-preview-wrapper {
+    padding: 20px;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+}
